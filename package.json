@@ -1,0 +1,27 @@
+{
+  "name": "api-crud-user-ibk",
+  "version": "1.0.0",
+  "author": "Hernan Bracamonte",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "docker-run-image-mongo": "docker run -d -it -p 27017:27017 --name docker-mongo mongo",
+    "docker-build": "docker build --no-cache --progress=plain -t api-crud-user-ibk .",
+    "docker-run": "docker run -d -it -p 4000:4000/tcp api-crud-user-ibk",
+    "docker-stop": "docker container stop api-crud-user-ibk",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest",
+    "api",
+    "mongodb"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.3"
+  }
+}
