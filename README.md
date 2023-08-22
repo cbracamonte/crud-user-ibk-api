@@ -18,7 +18,7 @@ Antes de utilizar esta API, asegúrate de tener instalado lo siguiente:
 1. Clona este repositorio en tu máquina local:
 
 ````
-git clone <URL_del_repositorio>
+git clone <https://github.com/cbracamonte/crud-user-ibk-api>
 
 cd <nombre_de_la_carpeta>
 
