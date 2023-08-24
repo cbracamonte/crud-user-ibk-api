@@ -18,7 +18,7 @@ Antes de utilizar esta API, asegúrate de tener instalado lo siguiente:
 1. Clona este repositorio en tu máquina local:
 
 ````
-git clone <https://github.com/cbracamonte/crud-user-ibk-api>
+git clone https://github.com/cbracamonte/crud-user-ibk-api
 
 cd <nombre_de_la_carpeta>
 
@@ -26,6 +26,10 @@ npm install
 
 npm start
 ````
+
+## Creación de base de datos MongoDB
+
+- Crear la base de datos MongoDB llamado ````crud-users-ibk```` y la colección ````users````
 
 # Uso de la API REST de Usuarios
 
@@ -36,7 +40,7 @@ Esta guía te proporciona instrucciones sobre cómo interactuar con la API REST 
 Para agregar un nuevo usuario, realiza una solicitud POST a la siguiente URL:
 
 ````
-<http://localhost:5000/api/users/add>
+http://localhost:5000/api/users/add
 ````
 
 Asegúrate de incluir los datos del usuario en el cuerpo de la solicitud.
@@ -46,7 +50,7 @@ Asegúrate de incluir los datos del usuario en el cuerpo de la solicitud.
 Para obtener la lista completa de usuarios, realiza una solicitud GET a la siguiente URL:
 
 ````
-<http://localhost:5000/api/users/>
+http://localhost:5000/api/users
 ````
 
 ## Obtener un Usuario por ID
@@ -54,7 +58,7 @@ Para obtener la lista completa de usuarios, realiza una solicitud GET a la sigui
 Si deseas obtener información sobre un usuario específico, realiza una solicitud GET a la siguiente URL, reemplazando `:id` con el ID real del usuario:
 
 ````
-<http://localhost:5000/api/users/:id>
+http://localhost:5000/api/users/:id
 ````
 
 ## Actualizar un Usuario
@@ -62,7 +66,7 @@ Si deseas obtener información sobre un usuario específico, realiza una solicit
 Si necesitas actualizar los datos de un usuario, realiza una solicitud PUT a la siguiente URL, reemplazando `:id` con el ID real del usuario:
 
 ````
-<http://localhost:5000/api/users/:id>
+http://localhost:5000/api/users/:id
 ````
 
 Proporciona los nuevos datos en el cuerpo de la solicitud.
@@ -72,7 +76,7 @@ Proporciona los nuevos datos en el cuerpo de la solicitud.
 Para eliminar un usuario, realiza una solicitud DELETE a la siguiente URL, reemplazando `:id` con el ID real del usuario:
 
 ````
-<http://localhost:5000/api/users/:id>
+http://localhost:5000/api/users/:id
 ````
 
 ## Eliminar Todos los Usuarios
@@ -80,12 +84,12 @@ Para eliminar un usuario, realiza una solicitud DELETE a la siguiente URL, reemp
 Si deseas eliminar todos los usuarios, realiza una solicitud DELETE a la siguiente URL:
 
 ````
-<http://localhost:5000/api/users/>
+http://localhost:5000/api/users
 ````
 
 ## Pueden ejecutar Docker
 
-- Para esto deben tener creada la base datos con el nombre de: ````crud-users-ibk````
+- Para esto deben tener creada la base datos en MongoDB con el nombre de: ````crud-users-ibk```` y la colección ````users````
 
 ````
 docker-run-image-mongo
@@ -94,6 +98,8 @@ docker-build
 
 docker-run
 ````
+
+Se ejecutará en el puerto 5000
 
 ## Pizza Owner
 

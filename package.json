@@ -7,7 +7,7 @@
     "start": "node server.js",
     "docker-run-image-mongo": "docker run -d -it -p 27017:27017 --name docker-mongo mongo",
     "docker-build": "docker build --no-cache --progress=plain -t api-crud-user-ibk .",
-    "docker-run": "docker run -d -it -p 4000:4000/tcp api-crud-user-ibk",
+    "docker-run": "docker run -d -it -p 5000:5000/tcp api-crud-user-ibk",
     "docker-stop": "docker container stop api-crud-user-ibk",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
